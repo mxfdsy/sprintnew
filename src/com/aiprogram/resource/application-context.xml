@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="user" class="com.aiprogram.entity.User">
-        <!--<constructor-arg type="int" value="123"></constructor-arg>-->
-        <!--<constructor-arg type="java.lang.String" value="laowang"></constructor-arg>-->
-        <property name="id" value="456"></property>
-        <property name="name" value="laoli"></property>
-    </bean>
-    <bean id="fatherUser" class="com.aiprogram.entity.UserFather">
-        <property name="fatherName" value="laodie"></property>
-    </bean>
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/contexthttp://www.springframework.org/schema/context/spring-context-xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+>
+    <context:component-scan base-package="com.aiprogram.**"/>
+    <!--<bean id="user" class="com.aiprogram.entity.User">-->
+        <!--&lt;!&ndash;<constructor-arg type="int" value="123"></constructor-arg>&ndash;&gt;-->
+        <!--&lt;!&ndash;<constructor-arg type="java.lang.String" value="laowang"></constructor-arg>&ndash;&gt;-->
+        <!--<property name="id" value="456"></property>-->
+        <!--<property name="name" value="laoli"></property>-->
+        <!--&lt;!&ndash;<property name="list">&ndash;&gt;-->
+            <!--&lt;!&ndash;<list>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>1</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>2</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>3</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>4</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>5</value>&ndash;&gt;-->
+            <!--&lt;!&ndash;</list>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+    <!--</bean>-->
+    <!--<bean id="fatherUser" class="com.aiprogram.entity.UserFather">-->
+        <!--<property name="fatherName" value="laodie"></property>-->
+        <!--<property name="user" ref="user"></property>-->
+    <!--</bean>-->
 </beans>

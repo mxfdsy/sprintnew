@@ -1,12 +1,22 @@
 package com.aiprogram.entity;
 
+import java.util.List;
+
 /**
  * Created by 没想法的岁月 on 2018/4/3.
  */
 public class User {
     private int id;
     private  String name;
-
+//    private List<String> list;
+//
+//    public List<String> getList() {
+//        return list;
+//    }
+//
+//    public void setList(List<String> list) {
+//        this.list = list;
+//    }
 
     public  User(){}{}
 
