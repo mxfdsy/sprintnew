@@ -1,10 +1,10 @@
 import com.aiprogram.Controller.UserController;
-import com.aiprogram.entity.User;
 import com.aiprogram.entity.UserFather;
-import com.aiprogram.serverce.UserService;
+import com.aiprogram.serveice.UserService;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+@EnableAspectJAutoProxy
 public class Main {
     public static void main(String[] args) {
         //加载Sprint
@@ -18,13 +18,13 @@ public class Main {
 //        System.out.println(user1.getName());
 //        System.out.println("------------------------");
 //
-        UserFather uf = context.getBean(UserFather.class);
-        System.out.println(uf.getFatherName());
-        System.out.println(uf.getUser().getId());
-        System.out.println(uf.getUser().getName());
+//        UserFather uf = context.getBean(UserFather.class);
+//        System.out.println(uf.getFatherName());
+//        System.out.println(uf.getUser().getId());
+//        System.out.println(uf.getUser().getName());
 
         UserController userController = context.getBean(UserController.class);
         UserService service =userController.getUserService();
-        service.say();
+        service.say("2342342");
     }
 }

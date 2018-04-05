@@ -1,8 +1,8 @@
-package com.aiprogram.serverce;
+package com.aiprogram.serveice;
 
 /**
  * Created by 平凡的世界 on 2018/4/3.
  */
 public interface UserService {
-    void say();
+    void say(String value);
 }
