@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 @Service("userServiceImpl")
 public class UserServiceImpl  implements  UserService{
     @Override
-    public void say(String value) {
+    public String say(String value) {
         System.out.println(value);
+        return "这是返回的值";
     }
 }

@@ -31,7 +31,16 @@
         <property name="user" ref="user"></property>
 
     </bean>
-<!--自动代理-->
-    <aop:aspectj-autoproxy/>
-    <!--<bean id="itemsService" class="com.fww.ssm.service.impl.ItemsServiceImpl"/>-->
+<!--自动代理，注解的方式运行切面-->
+    <!--<aop:aspectj-autoproxy/>-->
+
+
+    <!--使用XML的方式来运行切面-->
+    <!--加载这个类-->
+    <bean id="logger" class="com.aiprogram.aop.Logger"></bean>
+    <aop:config>
+        <aop:aspect id="loggerAspect" ref="logger">
+            <aop:around method="doLog" pointcut="execution(* com.aiprogram.serveice.*.*(..))"></aop:around>
+        </aop:aspect>
+    </aop:config>
 </beans>

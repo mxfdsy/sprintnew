@@ -25,6 +25,6 @@ public class Main {
 
         UserController userController = context.getBean(UserController.class);
         UserService service =userController.getUserService();
-        service.say("2342342");
+        service.say("没想法的岁月");
     }
 }
