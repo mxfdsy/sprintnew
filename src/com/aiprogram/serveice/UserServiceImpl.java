@@ -3,6 +3,8 @@ package com.aiprogram.serveice;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.InvocationHandler;
+
 /**
  * Created by 平凡的世界 on 2018/4/3.
  */
